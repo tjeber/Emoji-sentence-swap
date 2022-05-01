@@ -1,0 +1,31 @@
+emoji_dict = {
+    "happy": "😃",
+    "heart": "😍",
+    "rotfl": "🤣",
+    "smile": "😊",
+    "crying": "😭",
+    "kiss": "😘",
+    "clap": "👏",
+    "grin": "😁",
+    "fire": "🔥",
+    "broken": "💔",
+    "think": "🤔",
+    "excited": "🤩",
+    "boring": "🙄",
+    "winking": "😉",
+    "ok": "👌",
+    "hug": "🤗",
+    "cool": "😎",
+    "angry": "😠",
+    "python": "🐍",
+}
+
+sentence= input("Please enter a sentence: ")
+
+words=sentence.split()
+
+for word in words:
+    if word in emoji_dict:
+        emoji = emoji_dict[word]
+        sentence=sentence.replace(word,emoji)
+print(sentence)
